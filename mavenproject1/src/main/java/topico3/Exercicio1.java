@@ -33,24 +33,29 @@ public class Exercicio1 {
         Scanner sc = new Scanner(System.in);
         
         for(int linha=0; linha < rgDados1.length; linha++){
-            
             for(int coluna=0; coluna < rgDados1[linha].length; coluna++){
-                
-                System.out.println("Digite um valor: ");
+                System.out.println("Digite um valor: " + "[" + linha + "]" + "[" + coluna + "] ");
                 if(sc.hasNext()){
                     int i = Integer.parseInt(sc.next());
                     rgDados1[linha][coluna] = i;
                 }                
             }                        
         } 
+        for(int linha=0; linha < rgDados2.length; linha++){
+            for(int coluna=0; coluna < rgDados2[linha].length; coluna++){
+                System.out.println("Digite um valor: " + "[" + linha + "]" + "[" + coluna + "] ");
+                if(sc.hasNext()){
+                    int i = Integer.parseInt(sc.next());
+                    rgDados2[linha][coluna] = i;
+                }                
+            }                        
+        }
         
-        System.out.println("Matriz com a soma: ");
-        for(int linha=0; linha < rgDados1.length; linha++){
-            for(int coluna=0; coluna < rgDados1[linha].length; coluna++){ 
-                if(rgDados1[linha].length == 3){
-                    System.out.println("");
-                }
-                System.out.print(rgDados1[linha][coluna] + ", ");
+        System.out.println("Matriz rgDados3 com a soma: ");
+        for(int linha=0; linha < rgDados3.length; linha++){
+            for(int coluna=0; coluna < rgDados3[linha].length; coluna++){ 
+                rgDados3[linha][coluna] = rgDados1[linha][coluna] + rgDados2[linha][coluna];
+                System.out.print(rgDados3[linha][coluna] + ", ");
                 
             }   
             
