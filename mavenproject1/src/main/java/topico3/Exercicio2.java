@@ -31,6 +31,7 @@ public class Exercicio2 {
              for(int coluna=0; coluna < rgDados1[linha].length; coluna++){
               
                  //.... colocar try{}catch(){}
+                 //entender melhor como funciona 
 
              }                        
         }

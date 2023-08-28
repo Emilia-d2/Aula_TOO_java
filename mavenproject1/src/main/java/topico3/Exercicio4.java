@@ -4,6 +4,7 @@
  */
 package topico3;
 
+
 /**
  *
  * @author Mili
@@ -23,6 +24,28 @@ public class Exercicio4 {
      */
 
     public static void main(String[] args) {
+        
+        /* SE EU QUISER FAZER POR ENTRADA DE VALORES
+         float a;
+         float b;
+        
+         Scanner sc = new Scanner(System.in);
+         float valor1 = Float.parseFloat(sc.next());
+         float valor2 = Float.parseFloat(sc.next());
+
+          
+         a = valor1;
+         b = valor2;
+        
+             
+            
+           
+        float media = (a + b) / 2;
+        System.out.println("Parametro/argumento recebido pela funcao main: " + media);
+       
+        
+        
+        */
 
 
         if (args.length == 2) {

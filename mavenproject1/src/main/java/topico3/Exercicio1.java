@@ -35,6 +35,7 @@ public class Exercicio1 {
         for(int linha=0; linha < rgDados1.length; linha++){
             for(int coluna=0; coluna < rgDados1[linha].length; coluna++){
                 System.out.println("Digite um valor: " + "[" + linha + "]" + "[" + coluna + "] ");
+                //esse if serve para esperar o usuario digitar
                 if(sc.hasNext()){
                     int i = Integer.parseInt(sc.next());
                     rgDados1[linha][coluna] = i;
