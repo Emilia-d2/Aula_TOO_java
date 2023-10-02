@@ -52,7 +52,8 @@ public class TesteDatas {
         System.out.println("data em miliseconds: " + dateDate.getTime());
         System.out.println("Data formatada do Date " + data_formatada);
         //diferenca de milesegundos 
-        long diferencaMili = dateDate.getTime() - dataCalendar.getTimeInMillis();
+        long diferencaMili = (dateDate.getTime() - dataCalendar.getTimeInMillis()) / 86400000L;
+        //86400000L
         
         System.out.println(diferencaMili);
         
@@ -106,3 +107,7 @@ public class TesteDatas {
     }
     
 }
+
+
+//o dateCalendar serve basicamente para pegar datas mais completas
+// precisão, fusorário. O calendar é mais utilizado por conta disso, essa seria a diferença.
