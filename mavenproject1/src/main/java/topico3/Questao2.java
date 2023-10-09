@@ -13,6 +13,20 @@ import java.util.Map;
  *
  * @author Mili
  */
+
+/*2) Com base na classe Questao2 finalize a implementação do método
+manipulacaoStrings. Esse método deverá adicionar elementos no mapa
+mapDados (atributo da instância). Cada elemento deve conter a informação do
+código no formato java.lang.Idnteger e data no formato java.util.Calendar.*/
+
+
+/*
+2.1) Com base no código fonte da questão 2, codifique um novo método para
+imprimir na saída padrão todos elementos do mapa mapDados (atributo da
+instância). Cada impressão deve conter a chave e a data no formato
+dd/mm/yyyy. Esse método deverá ser chamado no construtor, após a
+chamada do método manipulacaoStrings.
+*/
 public class Questao2 {
 
     private Map<Integer, java.util.Calendar> mapDados = new HashMap<>();

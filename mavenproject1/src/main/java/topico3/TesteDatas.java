@@ -24,7 +24,7 @@ public class TesteDatas {
         System.out.println("Testes com as datas no java: ");
         //pego a data
         dataCalendar = Calendar.getInstance();
-        
+       
         //tipos de formatação e altera
         dataCalendar.set(Calendar.DAY_OF_MONTH, 15);
         dataCalendar.set(Calendar.YEAR, 2002);

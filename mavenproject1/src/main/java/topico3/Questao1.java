@@ -4,7 +4,11 @@
  */
 package topico3;
 
+import java.util.Collections;
 import java.util.List;
+import java.util.Set;
+import java.util.TreeSet;
+import topico3.outras_classes.Pneu;
 
 /**
  *
@@ -24,7 +28,7 @@ public class Questao1 {
     private String raw_data = "123,b,22,f,e,7,1,2,3";
 
     private java.util.List<Integer> dados = new java.util.ArrayList();
-   
+    private Set<Integer> st;
 
     public void converteDados(){
 
@@ -48,7 +52,7 @@ public class Questao1 {
     }
     
     public void imprimeEmOrdem(List<Integer> vet){
-       int cont1, cont2,aux;
+       /*int cont1, cont2,aux;
        java.util.List<Integer> aha = new java.util.ArrayList();
         for(cont1 =1; cont1<vet.size(); cont1++){
             for(cont2 =0; cont2 <vet.size(); cont2++){
@@ -71,8 +75,14 @@ public class Questao1 {
         
         for (int i = 0; i < aha.size(); i++) {
             System.out.print(aha.get(i) + ", "); 
-        }
+        }*/
        
+        st = new TreeSet<>();
+         for(int j=0; j < vet.size(); j++){
+                Collections.sort(vet);
+                st.add(vet.get(j));
+        }
+          System.out.println("Elemento da lista em ordem crescente: " + st);
     
     }
 
